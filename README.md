@@ -1,2 +1,2 @@
-# ioc-core
+# SimpleContainer
 Inversion Of Control container core project

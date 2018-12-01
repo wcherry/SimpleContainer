@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans>
+    <bean name="butter" class="beans.Bar"/>
+    <bean name="salad" class="beans.Foo"/>
+    <bean name="avocado" class="beans.AnnotatedBar"/>
+</beans>

@@ -42,7 +42,7 @@ public class SimpleContainerTest {
 
     @Test public void testNonExistentDirectory() throws Exception {
         SimpleContainer c = new SimpleContainer();
-        c.setBeansDirectory(new File("/this_directory_does_not_exists"));
+        c.setBeansDirectory(new File("./this_directory_does_not_exists"));
         c.init();
     }
 
@@ -67,7 +67,6 @@ public class SimpleContainerTest {
         //c.dumpBeans();
         assertNotNull("Container should have a boo bean", obj);
         assertEquals("Boo bean should be of type AnnotatedBar", AnnotatedBar.class, obj.getClass());
-//        AnnotatedBar boo = (AnnotatedBar)obj;
     }
 
 

@@ -29,7 +29,7 @@ public abstract class Container {
 
     public void addBean(String name, Class bean, boolean instValue){
         BeanHolder bh = new BeanHolder();
-        bh.name = name;
+        //bh.name = name;
         bh.bean = bean;
         bh.instValue = instValue;
         beans.put(name, bh);
@@ -93,8 +93,8 @@ public abstract class Container {
         return pnames;
     }
 
-    class BeanHolder{
-        String name;
+    static class BeanHolder{
+        //String name;
         Class bean;
         Object singleton;
         boolean instValue = false;

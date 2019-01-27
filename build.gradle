@@ -28,7 +28,6 @@ jar {
 
 dependencies {
     testCompile 'junit:junit:4.12'
-    compile 'org.sss.simple:XML:0.1-SNAPSHOT'
 }
 
 spotbugs {
